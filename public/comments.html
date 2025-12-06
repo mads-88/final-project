@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Downtown Donuts • Community Wall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html#home" class="brand-lockup">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <span class="brand-name">Downtown Donuts</span>
+          <span class="brand-tagline">Since 1992 • Downtown</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        Menu
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="comments.html">Community</a></li>
+        <li><a href="comments.html" class="nav-cta">Leave a Comment</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="comments">
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Community Wall</h1>
+            <p class="section-subtitle">
+              Think of this as the digital version of writing on a coffee shop chalkboard:
+              favorite donuts, cozy memories, and “you have to try this” recommendations.
+            </p>
+          </div>
+        </div>
+
+        <div class="comments-layout">
+          <div class="card">
+            <h2 class="card-title">Leave a Comment</h2>
+            <form class="comment-form" id="commentForm">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Jane Doe" />
+              </div>
+              <div class="form-row">
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" placeholder="you@example.com" />
+                <p class="small-help">Used only so they can say thank you. Not displayed publicly.</p>
+              </div>
+              <div class="form-row">
+                <label for="message">Your message</label>
+                <textarea
+                  id="message"
+                  required
+                  placeholder="Shout out your go-to order, your favorite donut (Buster the Bronco??), or a downtown memory."
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Post Comment</button>
+              <p class="small-help">
+                Prototype note: on the real site, comments would be stored in a database and moderated.
+                Here they just stay on the page while it’s open.
+              </p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Recent Comments</h2>
+            <div class="comment-list" id="commentList" aria-live="polite">
+              <article class="comment-item">
+                <div class="comment-item-header">
+                  <span class="comment-name">Alex</span>
+                  <span class="comment-meta">“Study break regular”</span>
+                </div>
+                <p>
+                  I swear the Buster the Bronco Crunch has carried me through more midterms than my planner ever did.
+                </p>
+              </article>
+              <article class="comment-item">
+                <div class="comment-item-header">
+                  <span class="comment-name">Jordan</span>
+                  <span class="comment-meta">“Weekend donut run”</span>
+                </div>
+                <p>
+                  Love grabbing a box before heading to the river. Cozy shop, good coffee, and everyone behind the counter
+                  is actually nice even at opening time.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-layout">
+      <div>
+        © <span id="year"></span> Downtown Donuts · 123 Main Street, Downtown · (555) 555-5555
+      </div>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="comments.html">Community</a>
+        <a href="mailto:jdoe@downtowndonuts.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
