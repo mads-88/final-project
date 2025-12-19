@@ -3,7 +3,7 @@
   --dd-saffron: #F7C64A;
   --dd-seasalt: #F7F7F7;
   --dd-black: #000000;
-  --dd-cool-gray: #d3d3d3;
+  --dd-cool-gray: #d3d3d3
 }
 
 * {
@@ -60,29 +60,10 @@ header {
   gap: 0.75rem;
 }
 
-.logo-mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 50% 50% 0 0;
-  border: 2px solid var(--dd-saffron);
-  border-bottom: none;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-  padding-bottom: 3px;
-}
-
-.logo-mark::before,
-.logo-mark::after {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 2px;
-  background-color: var(--dd-saffron);
-  bottom: 9px;
-  left: 50%;
-  transform: translateX(-50%);
+.logo-image {
+  width: 175px;
+  height: auto;
+  display: block;
 }
 
 .brand-text {
@@ -402,7 +383,7 @@ section {
   gap: 2rem;
 }
 
-.about-body p + p {
+.about-body p+p {
   margin-top: 0.8rem;
 }
 
@@ -548,7 +529,6 @@ footer {
   opacity: 1;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;

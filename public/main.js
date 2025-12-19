@@ -9,7 +9,7 @@ if (navToggle && navLinks) {
   });
 }
 
-// Simple client-side comments (only active where form/list exist)
+// client-side comments 
 const form = document.getElementById("commentForm");
 const list = document.getElementById("commentList");
 
